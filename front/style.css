@@ -1,0 +1,82 @@
+/* Estilo do background */
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(135deg, #0072ff, #7b00ff, #ff0080);
+	background-size: 400% 400%;
+	animation: gradient-animation 10s ease infinite;
+}
+
+/* Animação do gradiente */
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Centralizar a caixa */
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+/* Estilo do formulário */
+.login-form {
+	width: 300px;
+	padding: 30px;
+	border-radius: 15px;
+	backdrop-filter: blur(10px);
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+/* Estilo do título */
+.login-form h1 {
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+/* Estilo dos inputs */
+.login-form input {
+	width: 90%;
+	padding: 10px;
+	margin: 10px auto;
+	border: none;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.8);
+	font-size: 16px;
+	display: block;
+}
+
+/* Estilo do botão */
+.login-form button {
+	width: 90%;
+	padding: 10px;
+	margin: 10px auto;
+	border: none;
+	border-radius: 8px;
+	background: #0072ff;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	display: block;
+}
+
+.login-form button:hover {
+	background: #005fcc;
+}

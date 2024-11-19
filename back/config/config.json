@@ -1,0 +1,9 @@
+{
+	"development": {
+		"username": "tdragon",
+		"password": "123456",
+		"database": "tdragon-db",
+		"host": "tdragon-host",
+		"dialect": "postgres"
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "lab-tdragon",
+  "version": "1.0.0",
+  "description": "modelagem de ameaça do processo de login de uma aplicação convencional em cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karime Linhares",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.7.7",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2"
+  }
+}
