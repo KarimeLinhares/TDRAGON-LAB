@@ -858,7 +858,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
-                  "description": "O produto contém credenciais codificadas, como uma senha ou chave criptográfica.\n\nCWE-798: Use of Hard-coded Credentials\n\nCAPEC-191\tRead Sensitive Constants Within an Executable\nCAPEC-70\tTry Common or Default Usernames and Passwords",
+                  "description": "O produto contém credenciais codificadas, como uma senha ou chave criptográfica.\n\nCWE-798: Use of Hard-coded Credentials\n\nCAPEC-191\tRead Sensitive Constants Within an Executable",
                   "mitigation": "Fase: Arquitetura e Design\nPara autenticação de saída: armazene senhas, chaves e outras credenciais fora do código em um arquivo de configuração ou banco de dados criptografado e fortemente protegido contra acesso de todos os estranhos, incluindo outros usuários locais no mesmo sistema. Proteja adequadamente a chave (CWE-320). Se você não puder usar criptografia para proteger o arquivo, certifique-se de que as permissões sejam tão restritivas quanto possível [REF-7].\nEm ambientes Windows, o Sistema de Arquivos Criptografados (EFS) pode fornecer alguma proteção.\n\nFase: Arquitetura e Design\nPara autenticação de entrada: em vez de codificar um nome de usuário e senha padrão, chave ou outras credenciais de autenticação para logins pela primeira vez, utilize um modo de \"primeiro login\" que exige que o usuário insira uma senha ou chave forte exclusiva.\n\nFase: Arquitetura e Design\nSe o produto precisar conter credenciais codificadas ou elas não puderem ser removidas, execute verificações de controle de acesso e limite quais entidades podem acessar o recurso que requer as credenciais codificadas. Por exemplo, um recurso só pode ser ativado por meio do console do sistema, e não por meio de uma conexão de rede.\n\nFase: Arquitetura e Design\nPara autenticação de entrada usando senhas: aplique hashes unidirecionais fortes às senhas e armazene esses hashes em um arquivo de configuração ou banco de dados com controle de acesso apropriado. Dessa forma, o roubo do arquivo/banco de dados ainda exige que o invasor tente quebrar a senha. Ao lidar com uma senha recebida durante a autenticação, pegue o hash da senha e compare-o com o hash salvo.\nUse sais atribuídos aleatoriamente para cada hash separado gerado. Isso aumenta a quantidade de computação que um invasor precisa para conduzir um ataque de força bruta, possivelmente limitando a eficácia do método da tabela arco-íris.\n\nFase: Arquitetura e Design\nPara conexões front-end a back-end: Três soluções são possíveis, embora nenhuma esteja completa.\nA primeira sugestão envolve a utilização de senhas ou chaves geradas que são alteradas automaticamente e devem ser inseridas em determinados intervalos de tempo por um administrador do sistema. Essas senhas serão mantidas na memória e serão válidas apenas para os intervalos de tempo.\nEm seguida, as senhas ou chaves devem ser limitadas no back-end para executar apenas ações válidas para o front-end, em vez de ter acesso total.\nFinalmente, as mensagens enviadas devem ser marcadas e somadas com valores sensíveis ao tempo, de modo a evitar ataques do tipo repetição.",
                   "modelType": "STRIDE",
                   "new": false,
@@ -869,7 +869,7 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -1003,7 +1003,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Tampering",
-                  "description": "O produto não verifica suficientemente a origem ou autenticidade dos dados, de forma que aceite dados inválidos.\n\nCWE-345: Insufficient Verification of Data Authenticity\n\nCAPEC-111\tJSON Hijacking (aka JavaScript Hijacking)\nCAPEC-141\tCache Poisoning\nCAPEC-142\tDNS Cache Poisoning\nCAPEC-148\tContent Spoofing\nCAPEC-218\tSpoofing of UDDI/ebXML Messages\nCAPEC-384\tApplication API Message Manipulation via Man-in-the-Middle\nCAPEC-385\tTransaction or Event Tampering via Application API Manipulation\nCAPEC-386\tApplication API Navigation Remapping\nCAPEC-387\tNavigation Remapping To Propagate Malicious Content\nCAPEC-388\tApplication API Button Hijacking\nCAPEC-665\tExploitation of Thunderbolt Protection Flaws\nCAPEC-701\tBrowser in the Middle (BiTM)",
+                  "description": "O produto não verifica suficientemente a origem ou autenticidade dos dados, de forma que aceite dados inválidos.\n\nCWE-345: Insufficient Verification of Data Authenticity\n\nCAPEC-384\tApplication API Message Manipulation via Man-in-the-Middle",
                   "mitigation": "Fase: Implementação\nGarantir métodos de validação aplicados ao produto",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1016,7 +1016,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Tampering",
-                  "description": "Autenticar um usuário, ou estabelecer uma nova sessão de usuário, sem invalidar qualquer identificador de sessão existente, dá ao invasor a oportunidade de roubar sessões autenticadas.\n\nCWE-384: Session Fixation\n\nCAPEC-196\tSession Credential Falsification through Forging\nCAPEC-21\tExploitation of Trusted Identifiers\nCAPEC-31\tAccessing/Intercepting/Modifying HTTP Cookies\nCAPEC-39\tManipulating Opaque Client-based Data Tokens\nCAPEC-59\tSession Credential Falsification through Prediction\nCAPEC-60\tReusing Session IDs (aka Session Replay)\nCAPEC-61\tSession Fixation",
+                  "description": "Autenticar um usuário, ou estabelecer uma nova sessão de usuário, sem invalidar qualquer identificador de sessão existente, dá ao invasor a oportunidade de roubar sessões autenticadas.\n\nCWE-384: Session Fixation\n\nCAPEC-39\tManipulating Opaque Client-based Data Tokens",
                   "mitigation": "Fase: Implementação\nGarantir métodos de validação para o produto",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1025,11 +1025,18 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 4,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1160,8 +1167,8 @@
                   "title": "Falta de Criptografia de Dados Sensíveis",
                   "status": "Open",
                   "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "O produto não criptografa informações confidenciais ou críticas antes do armazenamento ou transmissão.\n\nCWE-311: Missing Encryption of Sensitive Data\n\nCAPEC-157\tSniffing Attacks\nCAPEC-158\tSniffing Network Traffic\nCAPEC-204\tLifting Sensitive Data Embedded in Cache\nCAPEC-31\tAccessing/Intercepting/Modifying HTTP Cookies\nCAPEC-37\tRetrieve Embedded Sensitive Data\nCAPEC-383\tHarvesting Information via API Event Monitoring\nCAPEC-384\tApplication API Message Manipulation via Man-in-the-Middle\nCAPEC-385\tTransaction or Event Tampering via Application API Manipulation\nCAPEC-386\tApplication API Navigation Remapping\nCAPEC-387\tNavigation Remapping To Propagate Malicious Content\nCAPEC-388\tApplication API Button Hijacking\nCAPEC-477\tSignature Spoofing by Mixing Signed and Unsigned Content\nCAPEC-609\tCellular Traffic Intercept\nCAPEC-65\tSniff Application Code",
+                  "type": "Tampering",
+                  "description": "O produto não criptografa informações confidenciais ou críticas antes do armazenamento ou transmissão.\n\nCWE-311: Missing Encryption of Sensitive Data\n\nCAPEC-385 Transaction or Event Tampering via Application API Manipulation",
                   "mitigation": "Fase: Requisitos\nEspecifique claramente quais dados ou recursos são valiosos o suficiente para serem protegidos por criptografia. Exigir que qualquer transmissão ou armazenamento desses dados/recursos use algoritmos de criptografia bem verificados.\n\nFase: Arquitetura e Design\nCertifique-se de que a criptografia esteja devidamente integrada ao design do sistema, incluindo, mas não necessariamente limitado a:\nCriptografia necessária para armazenar ou transmitir dados privados dos usuários do sistema\nCriptografia necessária para proteger o próprio sistema contra divulgação ou adulteração não autorizada\nIdentifique as necessidades e contextos separados para criptografia:\nUnidirecional (ou seja, apenas o usuário ou destinatário precisa ter a chave). Isto pode ser conseguido usando criptografia de chave pública ou outras técnicas nas quais a parte criptografadora (ou seja, o produto) não precisa ter acesso a uma chave privada.\nBidirecional (ou seja, a criptografia pode ser executada automaticamente em nome de um usuário, mas a chave deve estar disponível para que o texto simples possa ser automaticamente recuperável por esse usuário). Isto requer o armazenamento da chave privada num formato que seja recuperável apenas pelo utilizador (ou talvez pelo sistema operativo) de uma forma que não possa ser recuperada por outros.\nUsando modelagem de ameaças ou outras técnicas, presuma que os dados podem ser comprometidos por meio de uma vulnerabilidade ou fraqueza separada e determine onde a criptografia será mais eficaz. Certifique-se de que os dados que deveriam ser privados não sejam expostos inadvertidamente usando pontos fracos, como permissões inseguras (CWE-732). [REF-7]\n\nFase: Arquitetura e Design\nEstratégia: Bibliotecas ou Frameworks\nQuando houver necessidade de armazenar ou transmitir dados confidenciais, use algoritmos criptográficos fortes e atualizados para criptografar esses dados. Selecione um algoritmo bem avaliado que seja atualmente considerado forte por especialistas na área e use implementações bem testadas. Tal como acontece com todos os mecanismos criptográficos, o código-fonte deve estar disponível para análise.\nPor exemplo, os sistemas governamentais dos EUA exigem certificação FIPS 140-2.\nNão desenvolva algoritmos criptográficos personalizados ou privados. Eles provavelmente estarão expostos a ataques que são bem compreendidos pelos criptógrafos. As técnicas de engenharia reversa estão maduras. Se o algoritmo puder ser comprometido se os invasores descobrirem como ele funciona, então ele é especialmente fraco.\nCertifique-se periodicamente de que a criptografia não se tornou obsoleta. Alguns algoritmos mais antigos, que antes exigiam um bilhão de anos de tempo de computação, agora podem ser quebrados em dias ou horas. Isso inclui MD4, MD5, SHA1, DES e outros algoritmos que já foram considerados fortes. [REF-267]\n\nFase: Arquitetura e Design\nEstratégia: Separação de Privilégios\nCompartimentalize o sistema para ter áreas “seguras” onde os limites de confiança possam ser traçados de forma inequívoca. Não permita que dados confidenciais ultrapassem os limites de confiança e sempre tenha cuidado ao interagir com um compartimento fora da área segura.\nCertifique-se de que a compartimentação apropriada esteja incorporada no design do sistema e que a compartimentação permita e reforce a funcionalidade de separação de privilégios. Arquitetos e designers devem confiar no princípio do menor privilégio para decidir o momento apropriado para usar privilégios e o momento para abandoná-los.\n\nFases: Implementação; Arquitetura e Design\nAo usar técnicas aprovadas pela indústria, use-as corretamente. Não economize pulando etapas que consomem muitos recursos (CWE-325). Muitas vezes, essas etapas são essenciais para prevenir ataques comuns.\n\nFase: Implementação\nEstratégia: Redução da Superfície de Ataque\nUse convenções de nomenclatura e tipos fortes para facilitar a identificação quando dados confidenciais estão sendo usados. Ao criar estruturas, objetos ou outras entidades complexas, separe os dados confidenciais e não confidenciais tanto quanto possível.\nEficácia: Defesa em Profundidade\nObservação: isso torna mais fácil identificar locais no código onde os dados não criptografados estão sendo usados.",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1170,7 +1177,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 0
