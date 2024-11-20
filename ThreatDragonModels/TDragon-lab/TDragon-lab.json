@@ -1292,7 +1292,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Logged",
-              "description": "",
+              "description": "Tela front-end do usuário logado no produto",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
