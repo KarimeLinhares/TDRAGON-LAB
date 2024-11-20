@@ -16,12 +16,1291 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.3.0",
-        "cells": [],
+        "cells": [
+          {
+            "position": {
+              "x": 70,
+              "y": 210
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "52ee4455-822b-460d-ab7e-bca96969015f"
+                },
+                {
+                  "group": "right",
+                  "id": "75b7e3e1-7a4c-4234-a962-4e73d9049762"
+                },
+                {
+                  "group": "bottom",
+                  "id": "40f28aa3-fcce-4a62-8ac9-b393dbe8caae"
+                },
+                {
+                  "group": "left",
+                  "id": "8e961f22-bd2e-489d-9c3c-f91cb7f4a5f3"
+                }
+              ]
+            },
+            "id": "3b51c982-d9e4-46e8-88cf-aecf497a3756",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "User",
+              "description": "Usuário que vai utilizar a aplicação",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 374,
+              "y": 210
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Login"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "6ea3d6a3-81c0-422d-a9ec-9a2ba06907db"
+                },
+                {
+                  "group": "right",
+                  "id": "4a77068a-6f59-4d3c-aa17-28915007f78a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2c29ed33-6ee5-4d5d-aee9-cec385a3797e"
+                },
+                {
+                  "group": "left",
+                  "id": "ab649009-5163-4171-b162-61378a129751"
+                }
+              ]
+            },
+            "id": "0f5d85b8-7b92-4f03-8e65-ceb99786123b",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Login",
+              "description": "tela no front end onde o usuário vai colocar seus dados nos inputs, e submeter os dados através de um botão de submissão",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "f56fb622-d542-4ab7-bacb-a11d754dce01",
+                  "title": "Transmissão de informações confidenciais em texto não criptografado",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "O produto transmite dados confidenciais ou críticos para a segurança em texto não criptografado em um canal de comunicação que pode ser detectado por atores não autorizados.\n\nCWE-319: Cleartext Transmission of Sensitive Information\n\nCAPEC-102\tSession Sidejacking\nCAPEC-117\tInterception\nCAPEC-383\tHarvesting Information via API Event Monitoring\nCAPEC-477\tSignature Spoofing by Mixing Signed and Unsigned Content\nCAPEC-65\tSniff Application Code",
+                  "mitigation": "Fase: Arquitetura e Design\nAntes de transmitir, criptografe os dados usando protocolos criptográficos confiáveis ​​e que protegem a confidencialidade.\n\nFase: Implementação\nAo usar aplicativos da web com SSL, use SSL para toda a sessão, do login ao logout, não apenas para a página de login inicial.\n\nFase: Implementação\nAo projetar plataformas de hardware, certifique-se de que algoritmos de criptografia aprovados (como os recomendados pelo NIST) protejam caminhos de dados críticos de segurança para aplicativos de usuários confiáveis.\n\nFase: Teste\nUse ferramentas e técnicas que exigem análise manual (humana), como testes de penetração, modelagem de ameaças e ferramentas interativas que permitem ao testador registrar e modificar uma sessão ativa. Estas podem ser mais eficazes do que técnicas estritamente automatizadas. Este é especialmente o caso de pontos fracos relacionados ao design e às regras de negócios.\n\nFase: Operação\nConfigure servidores para usar canais criptografados para comunicação, que podem incluir SSL ou outros protocolos seguros.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "9"
+                },
+                {
+                  "id": "90e8d938-476e-426a-b925-fb6da7c23af5",
+                  "title": "Confiança em Cookies sem Validação e Verificação de Integridade",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "O produto depende da existência ou dos valores de cookies ao realizar operações críticas de segurança, mas não garante adequadamente que a configuração seja válida para o usuário associado.\n\nCWE-565: Reliance on Cookies without Validation and Integrity Checking\n\nCAPEC-226\tSession Credential Falsification through Manipulation\nCAPEC-31\tAccessing/Intercepting/Modifying HTTP Cookies\nCAPEC-39\tManipulating Opaque Client-based Data Tokens",
+                  "mitigation": "Fase: Arquitetura e Design\nEvite usar dados de cookies para tomar decisões relacionadas à segurança.\n\nFase: Implementação\nExecute uma validação de entrada completa (ou seja: validação no lado do servidor) nos dados do cookie se você for usá-los para uma decisão relacionada à segurança.\n\nFase: Arquitetura e Design\nAdicione verificações de integridade para detectar adulterações.\n\nFase: Arquitetura e Design\nProteja cookies críticos contra ataques de repetição, pois scripts entre sites ou outros ataques podem permitir que invasores roubem um cookie fortemente criptografado que também passe nas verificações de integridade. Esta mitigação se aplica a cookies que só devem ser válidos durante uma única transação ou sessão. Ao impor tempos limite, você pode limitar o escopo de um ataque. Como parte da verificação de integridade, use um valor imprevisível do lado do servidor que não seja exposto ao cliente.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "6"
+                },
+                {
+                  "id": "4cb7d1ea-a4a3-49e3-8545-621db6a1bb63",
+                  "title": "CSFR",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "O aplicativo da web não verifica ou não pode verificar suficientemente se uma solicitação bem formada, válida e consistente foi fornecida intencionalmente pelo usuário que enviou a solicitação.\n\nCWE-352: Cross-Site Request Forgery (CSRF)\n\nCAPEC-111\tJSON Hijacking (aka JavaScript Hijacking)\nCAPEC-462\tCross-Domain Search Timing\nCAPEC-467\tCross Site Identification\nCAPEC-62\tCross Site Request Forgery",
+                  "mitigation": "Fase: Arquitetura e Design\nEstratégia: Bibliotecas ou Frameworks\nUse uma biblioteca ou estrutura verificada que não permita que essa fraqueza ocorra ou forneça construções que tornem essa fraqueza mais fácil de evitar.\nPor exemplo, use pacotes anti-CSRF como o OWASP CSRFGuard. [REF-330]\nOutro exemplo é o controle ESAPI Session Management, que inclui um componente para CSRF. [REF-45]\n\nFase: Implementação\nCertifique-se de que o aplicativo esteja livre de problemas de script entre sites (CWE-79), pois a maioria das defesas CSRF pode ser contornada usando script controlado pelo invasor.\nFase: Arquitetura e Design\nGere um nome exclusivo para cada formulário, coloque-o no formulário e verifique-o após o recebimento do formulário. Certifique-se de que o nonce não seja previsível (CWE-330). [REF-332]\nNota: Observe que isso pode ser ignorado usando XSS (CWE-79).\n\nFase: Arquitetura e Design\nIdentifique operações especialmente perigosas. Quando o usuário realizar uma operação perigosa, envie uma solicitação de confirmação separada para garantir que o usuário pretendia realizar essa operação.\nNota: Observe que isso pode ser ignorado usando XSS (CWE-79).\n\nFase: Arquitetura e Design\nUse o método de \"cookie enviado duas vezes\" conforme descrito por Felten e Zeller:\nQuando um usuário visita um site, o site deve gerar um valor pseudoaleatório e configurá-lo como um cookie na máquina do usuário. O site deve exigir que cada envio de formulário inclua esse valor como valor de formulário e também como valor de cookie. Quando uma solicitação POST é enviada ao site, a solicitação só deve ser considerada válida se o valor do formulário e o valor do cookie forem iguais.\nDevido à política de mesma origem, um invasor não pode ler ou modificar o valor armazenado no cookie. Para enviar um formulário com êxito em nome do usuário, o invasor teria que adivinhar corretamente o valor pseudoaleatório. Se o valor pseudoaleatório for criptograficamente forte, isso será proibitivamente difícil.\nEsta técnica requer Javascript, portanto pode não funcionar em navegadores com Javascript desabilitado. [REF-331]\nObservação: observe que isso provavelmente pode ser contornado usando XSS (CWE-79) ou ao usar tecnologias da Web que permitem ao invasor ler cabeçalhos brutos de solicitações HTTP.\nFase: Arquitetura e Design\nNão use o método GET para nenhuma solicitação que acione uma mudança de estado.\n\nFase: Implementação\nVerifique o cabeçalho HTTP Referer para ver se a solicitação foi originada de uma página esperada. Isso pode quebrar a funcionalidade legítima, porque os usuários ou proxies podem ter desativado o envio do Referer por motivos de privacidade.\nNota: Observe que isso pode ser ignorado usando XSS (CWE-79). Um invasor pode usar XSS para gerar um Referer falsificado ou para gerar uma solicitação maliciosa de uma página cujo Referer seria permitido.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 4,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login Frontend",
+              "description": "Usuário coloca os dados",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Login Frontend"
+            ],
+            "id": "38550c4b-94dd-4969-b209-1e9d281d8177",
+            "source": {
+              "cell": "3b51c982-d9e4-46e8-88cf-aecf497a3756",
+              "port": "75b7e3e1-7a4c-4234-a962-4e73d9049762"
+            },
+            "target": {
+              "cell": "0f5d85b8-7b92-4f03-8e65-ceb99786123b",
+              "port": "ab649009-5163-4171-b162-61378a129751"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dados Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Dados Login"
+            ],
+            "id": "631dae91-05d8-481a-b0c2-3f6be56f5c73",
+            "source": {
+              "cell": "0f5d85b8-7b92-4f03-8e65-ceb99786123b"
+            },
+            "target": {
+              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dados do usuário/JWT",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Dados do usuário/JWT"
+            ],
+            "id": "cbdce7a0-45ee-4687-8ef0-290ae0922c0c",
+            "source": {
+              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af"
+            },
+            "target": {
+              "cell": "a538fc1b-4f9e-4820-9e91-27af24ed6d43"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dados do Usuário",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Dados do Usuário"
+            ],
+            "id": "baa0de33-520c-46cc-8b83-1303f68838b7",
+            "source": {
+              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af"
+            },
+            "target": {
+              "cell": "f5ec1e64-fd8c-4bde-9b95-580c4dd2c4be"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Usuário verificado redirecionado",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Usuário verificado redirecionado"
+            ],
+            "id": "76ae04cc-983c-4e38-a106-b93e95b6b3dc",
+            "source": {
+              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af",
+              "port": "2c29ed33-6ee5-4d5d-aee9-cec385a3797e"
+            },
+            "target": {
+              "cell": "0e847036-dc57-46a6-b94b-2c9a3d3140b6",
+              "port": "6ea3d6a3-81c0-422d-a9ec-9a2ba06907db"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Log"
+            ],
+            "id": "af86a422-d7dd-47ef-95ce-88dd2cd383fa",
+            "source": {
+              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af",
+              "port": "4a77068a-6f59-4d3c-aa17-28915007f78a"
+            },
+            "target": {
+              "cell": "b67121fc-7c68-4c9c-9b10-2bf73c2c6f0d",
+              "port": "3ed19bb6-8dcf-45d5-a04f-a4ef3cae47ac"
+            }
+          },
+          {
+            "position": {
+              "x": 576,
+              "y": 210
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Backend"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "6ea3d6a3-81c0-422d-a9ec-9a2ba06907db"
+                },
+                {
+                  "group": "right",
+                  "id": "4a77068a-6f59-4d3c-aa17-28915007f78a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2c29ed33-6ee5-4d5d-aee9-cec385a3797e"
+                },
+                {
+                  "group": "left",
+                  "id": "ab649009-5163-4171-b162-61378a129751"
+                }
+              ]
+            },
+            "id": "0647de6b-7059-4b24-ab33-0a8c6fe419af",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Backend",
+              "description": "O backend vai lidar com os dados e envia-los para suas devidas integrações, assim como lidar com as respostas",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "4cb7d1ea-a4a3-49e3-8545-621db6a1bb63",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "O produto constrói todo ou parte de um comando SQL usando entrada influenciada externamente de um componente upstream, mas não neutraliza ou neutraliza incorretamente elementos especiais que poderiam modificar o comando SQL pretendido quando ele é enviado para um componente downstream. Sem remoção ou citação suficiente da sintaxe SQL nas entradas controláveis ​​pelo usuário, a consulta SQL gerada pode fazer com que essas entradas sejam interpretadas como SQL em vez de dados comuns do usuário.\n\nCWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')\n\nCAPEC-108\tCommand Line Execution through SQL Injection\nCAPEC-109\tObject Relational Mapping Injection\nCAPEC-110\tSQL Injection through SOAP Parameter Tampering\nCAPEC-470\tExpanding Control over the Operating System from the Database\nCAPEC-66\tSQL Injection\nCAPEC-7\tBlind SQL Injection",
+                  "mitigation": "Fase: Arquitetura e Design\nEstratégia: Bibliotecas ou Frameworks\nUse uma biblioteca ou estrutura verificada que não permita que essa fraqueza ocorra ou forneça construções que tornem essa fraqueza mais fácil de evitar.\nPor exemplo, considere usar camadas de persistência como Hibernate ou Enterprise Java Beans, que podem fornecer proteção significativa contra injeção de SQL se usadas corretamente.\n\nFase: Arquitetura e Design\nEstratégia: Parametrização\nSe disponível, use mecanismos estruturados que imponham automaticamente a separação entre dados e código. Esses mecanismos podem ser capazes de fornecer automaticamente a cotação, a codificação e a validação relevantes, em vez de depender do desenvolvedor para fornecer esse recurso em cada ponto onde a saída é gerada.\nProcesse consultas SQL usando instruções preparadas, consultas parametrizadas ou procedimentos armazenados. Esses recursos devem aceitar parâmetros ou variáveis ​​e suportar digitação forte. Não construa e execute cadeias de consulta dinamicamente dentro desses recursos usando \"exec\" ou funcionalidade semelhante, pois isso pode reintroduzir a possibilidade de injeção de SQL. [REF-867]\n\nFases: Arquitetura e Design; Operação\nEstratégia: Endurecimento Ambiental\nExecute seu código usando os privilégios mais baixos necessários para realizar as tarefas necessárias [REF-76]. Se possível, crie contas isoladas com privilégios limitados que sejam usadas apenas para uma única tarefa. Dessa forma, um ataque bem-sucedido não dará ao invasor acesso imediato ao restante do software ou ao seu ambiente. Por exemplo, os aplicativos de banco de dados raramente precisam ser executados como administrador de banco de dados, especialmente nas operações diárias.\nEspecificamente, siga o princípio do menor privilégio ao criar contas de usuário em um banco de dados SQL. Os usuários do banco de dados devem ter apenas os privilégios mínimos necessários para utilizar sua conta. Se os requisitos do sistema indicarem que um usuário pode ler e modificar seus próprios dados, limite seus privilégios para que ele não possa ler/gravar dados de outros. Use as permissões mais rigorosas possíveis em todos os objetos de banco de dados, como somente execução para procedimentos armazenados.\n\nFase: Arquitetura e Design\nPara quaisquer verificações de segurança executadas no lado do cliente, certifique-se de que essas verificações sejam duplicadas no lado do servidor, para evitar o CWE-602. Os invasores podem ignorar as verificações do lado do cliente modificando os valores após a execução das verificações ou alterando o cliente para remover totalmente as verificações do lado do cliente. Então, esses valores modificados seriam enviados ao servidor.\n\nFase: Implementação\nEstratégia: Codificação de Saída\nEmbora seja arriscado usar strings de consulta, códigos ou comandos gerados dinamicamente que misturem controle e dados, às vezes isso pode ser inevitável. Cite argumentos corretamente e escape de quaisquer caracteres especiais dentro desses argumentos. A abordagem mais conservadora é escapar ou filtrar todos os caracteres que não passam por uma lista de permissões extremamente rigorosa (como tudo que não seja alfanumérico ou espaço em branco). Se alguns caracteres especiais ainda forem necessários, como espaço em branco, coloque cada argumento entre aspas após a etapa de escape/filtragem. Tenha cuidado com a injeção de argumentos (CWE-88).\nEm vez de construir uma nova implementação, tais recursos podem estar disponíveis no banco de dados ou na linguagem de programação. Por exemplo, o pacote Oracle DBMS_ASSERT pode verificar ou impor que os parâmetros tenham determinadas propriedades que os tornam menos vulneráveis ​​à injeção de SQL. Para MySQL, a função API mysql_real_escape_string() está disponível em C e PHP.\n\nFase: Implementação\nEstratégia: Validação de Entrada\nSuponha que todas as entradas sejam maliciosas. Use uma estratégia de validação de entrada \"aceitar boas informações\", ou seja, use uma lista de entradas aceitáveis ​​que estejam estritamente em conformidade com as especificações. Rejeite qualquer entrada que não esteja estritamente em conformidade com as especificações ou transforme-a em algo que esteja.\nAo realizar a validação de entrada, considere todas as propriedades potencialmente relevantes, incluindo comprimento, tipo de entrada, toda a gama de valores aceitáveis, entradas ausentes ou extras, sintaxe, consistência entre campos relacionados e conformidade com regras de negócios. Como exemplo de lógica de regra de negócios, \"barco\" pode ser sintaticamente válido porque contém apenas caracteres alfanuméricos, mas não é válido se se espera que a entrada contenha apenas cores como \"vermelho\" ou \"azul\".\nNão confie exclusivamente na procura de entradas maliciosas ou malformadas. É provável que isso perca pelo menos uma entrada indesejável, especialmente se o ambiente do código mudar. Isso pode dar aos invasores espaço suficiente para ignorar a validação pretendida. No entanto, as listas de bloqueio podem ser úteis para detectar possíveis ataques ou determinar quais entradas estão tão malformadas que devem ser rejeitadas imediatamente.\nAo construir strings de consulta SQL, use listas de permissões rigorosas que limitem o conjunto de caracteres com base no valor esperado do parâmetro na solicitação. Isso limitará indiretamente o escopo de um ataque, mas essa técnica é menos importante do que a codificação e o escape de saída adequados.\nObserve que codificação, escape e cotação de saída adequados são a solução mais eficaz para evitar a injeção de SQL, embora a validação de entrada possa fornecer alguma defesa profunda. Isso ocorre porque limita efetivamente o que aparecerá na saída. A validação de entrada nem sempre impedirá a injeção de SQL, especialmente se for necessário oferecer suporte a campos de texto de formato livre que possam conter caracteres arbitrários. Por exemplo, o nome \"O'Reilly\" provavelmente passaria na etapa de validação, já que é um sobrenome comum no idioma inglês. No entanto, ele não pode ser inserido diretamente no banco de dados porque contém o caractere de apóstrofo \"'\", que precisaria ser escapado ou tratado de outra forma. Nesse caso, remover o apóstrofo poderia reduzir o risco de injeção de SQL, mas produziria um comportamento incorreto porque o nome errado seria registrado.\nQuando possível, pode ser mais seguro proibir totalmente os metacaracteres, em vez de escapar deles. Isso fornecerá alguma defesa em profundidade. Depois que os dados são inseridos no banco de dados, os processos posteriores podem negligenciar o escape dos metacaracteres antes do uso, e você pode não ter controle sobre esses processos.\n\nFase: Arquitetura e Design\nEstratégia: Aplicação por Conversão\nQuando o conjunto de objetos aceitáveis, como nomes de arquivos ou URLs, for limitado ou conhecido, crie um mapeamento de um conjunto de valores de entrada fixos (como IDs numéricos) para os nomes de arquivos ou URLs reais e rejeite todas as outras entradas.\n\nFase: Implementação\nCertifique-se de que as mensagens de erro contenham apenas detalhes mínimos que sejam úteis para o público-alvo e mais ninguém. As mensagens precisam encontrar o equilíbrio entre serem muito enigmáticas (o que pode confundir os usuários) ou muito detalhadas (o que pode revelar mais do que o pretendido). As mensagens não devem revelar os métodos usados ​​para determinar o erro. Os invasores podem usar informações detalhadas para refinar ou otimizar seu ataque original, aumentando assim suas chances de sucesso.\nSe os erros precisarem ser capturados com algum detalhe, registre-os em mensagens de log, mas considere o que poderia ocorrer se as mensagens de log pudessem ser visualizadas pelos invasores. Informações altamente confidenciais, como senhas, nunca devem ser salvas em arquivos de log.\nEvite mensagens inconsistentes que possam alertar acidentalmente um invasor sobre o estado interno, como se uma conta de usuário existe ou não.\nNo contexto de SQL Injection, mensagens de erro que revelam a estrutura de uma consulta SQL podem ajudar os invasores a personalizar sequências de ataques bem-sucedidos.\n\nFase: Operação\nEstratégia: Firewall\nUse um firewall de aplicativo que possa detectar ataques contra esse ponto fraco. Pode ser benéfico nos casos em que o código não pode ser corrigido (porque é controlado por terceiros), como medida de prevenção de emergência enquanto são aplicadas medidas de garantia de software mais abrangentes, ou para fornecer defesa em profundidade.\nEficácia: Moderada\nNota: Um firewall de aplicativo pode não cobrir todos os vetores de entrada possíveis. Além disso, técnicas de ataque podem estar disponíveis para contornar o mecanismo de proteção, como o uso de entradas malformadas que ainda podem ser processadas pelo componente que recebe essas entradas. Dependendo da funcionalidade, um firewall de aplicativo pode rejeitar ou modificar inadvertidamente solicitações legítimas. Finalmente, algum esforço manual pode ser necessário para personalização.\n\nFases: Operação; Implementação\nEstratégia: Endurecimento Ambiental\nAo usar PHP, configure a aplicação para que ela não utilize register_globals. Durante a implementação, desenvolva o aplicativo para que ele não dependa desse recurso, mas tenha cuidado ao implementar uma emulação de Register_globals que esteja sujeita a pontos fracos como CWE-95, CWE-621 e problemas semelhantes.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "8"
+                },
+                {
+                  "id": "4cb7d1ea-a4a3-49e3-8545-621db6a1bb63",
+                  "title": "Autenticação imprópria",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Repudiation",
+                  "description": "Quando um usuário afirma ter uma determinada identidade, o produto não prova ou prova insuficientemente que a afirmação está correta.\n\nCWE-287: Improper Authentication\n\nCAPEC-114\tAuthentication Abuse\nCAPEC-115\tAuthentication Bypass\nCAPEC-151\tIdentity Spoofing\nCAPEC-194\tFake the Source of Data\nCAPEC-22\tExploiting Trust in Client\nCAPEC-57\tUtilizing REST's Trust in the System Resource to Obtain Sensitive Data\nCAPEC-593\tSession Hijacking\nCAPEC-633\tToken Impersonation\nCAPEC-650\tUpload a Web Shell to a Web Server\nCAPEC-94\tAdversary in the Middle (AiTM)",
+                  "mitigation": "Fase: Arquitetura e Design\nEstratégia: Bibliotecas ou Frameworks\nUse uma estrutura ou biblioteca de autenticação, como o recurso de autenticação OWASP ESAPI.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "10"
+                },
+                {
+                  "id": "4cb7d1ea-a4a3-49e3-8545-621db6a1bb63",
+                  "title": "Restrição inadequada de tentativas excessivas de autenticação",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "O produto não implementa medidas suficientes para evitar múltiplas tentativas de autenticação malsucedidas em um curto espaço de tempo.\n\nCWE-307: Improper Restriction of Excessive Authentication Attempts\n\nCAPEC-16\tDictionary-based Password Attack\nCAPEC-49\tPassword Brute Forcing\nCAPEC-560\tUse of Known Domain Credentials\nCAPEC-565\tPassword Spraying\nCAPEC-600\tCredential Stuffing\nCAPEC-652\tUse of Known Kerberos Credentials\nCAPEC-653\tUse of Known Operating System Credentials",
+                  "mitigation": "Fase: Arquitetura e Design\nOs mecanismos de proteção comuns incluem:\nDesconectar o usuário após um pequeno número de tentativas fracassadas\nImplementando um tempo limite\nBloqueando uma conta direcionada\nExigindo uma tarefa computacional por parte do usuário.\n\nFase: Arquitetura e Design\nEstratégia: Bibliotecas ou Frameworks\nUse uma biblioteca ou estrutura verificada que não permita que essa fraqueza ocorra ou forneça construções que tornem essa fraqueza mais fácil de evitar.\nConsidere usar bibliotecas com recursos de autenticação, como OpenSSL ou ESAPI Authenticator. [REF-45]",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "8"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 546,
+              "y": 40
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Docker"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1c97753e-d24b-44ae-8133-fa1751ac9fdf"
+                },
+                {
+                  "group": "right",
+                  "id": "fefc5757-3aff-446b-9b54-a67bacee372d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "94dee397-6ecd-404c-a6b3-55befcb9c7ae"
+                },
+                {
+                  "group": "left",
+                  "id": "3ed19bb6-8dcf-45d5-a04f-a4ef3cae47ac"
+                }
+              ]
+            },
+            "id": "f5ec1e64-fd8c-4bde-9b95-580c4dd2c4be",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Docker",
+              "description": "para encapsulamento e armazenamento dos dados do usuário em contêineres, garantindo portabilidade e escalabilidade",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "2b56d154-42d1-4963-9916-8f563d1fffc1",
+                  "title": "Uso de credenciais codificadas ou mal gerenciadas",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "O produto contém credenciais codificadas, como uma senha ou chave criptográfica.\n\nCWE-798: Use of Hard-coded Credentials\n\nCAPEC-191\tRead Sensitive Constants Within an Executable\nCAPEC-70\tTry Common or Default Usernames and Passwords",
+                  "mitigation": "Fase: Arquitetura e Design\nPara autenticação de saída: armazene senhas, chaves e outras credenciais fora do código em um arquivo de configuração ou banco de dados criptografado e fortemente protegido contra acesso de todos os estranhos, incluindo outros usuários locais no mesmo sistema. Proteja adequadamente a chave (CWE-320). Se você não puder usar criptografia para proteger o arquivo, certifique-se de que as permissões sejam tão restritivas quanto possível [REF-7].\nEm ambientes Windows, o Sistema de Arquivos Criptografados (EFS) pode fornecer alguma proteção.\n\nFase: Arquitetura e Design\nPara autenticação de entrada: em vez de codificar um nome de usuário e senha padrão, chave ou outras credenciais de autenticação para logins pela primeira vez, utilize um modo de \"primeiro login\" que exige que o usuário insira uma senha ou chave forte exclusiva.\n\nFase: Arquitetura e Design\nSe o produto precisar conter credenciais codificadas ou elas não puderem ser removidas, execute verificações de controle de acesso e limite quais entidades podem acessar o recurso que requer as credenciais codificadas. Por exemplo, um recurso só pode ser ativado por meio do console do sistema, e não por meio de uma conexão de rede.\n\nFase: Arquitetura e Design\nPara autenticação de entrada usando senhas: aplique hashes unidirecionais fortes às senhas e armazene esses hashes em um arquivo de configuração ou banco de dados com controle de acesso apropriado. Dessa forma, o roubo do arquivo/banco de dados ainda exige que o invasor tente quebrar a senha. Ao lidar com uma senha recebida durante a autenticação, pegue o hash da senha e compare-o com o hash salvo.\nUse sais atribuídos aleatoriamente para cada hash separado gerado. Isso aumenta a quantidade de computação que um invasor precisa para conduzir um ataque de força bruta, possivelmente limitando a eficácia do método da tabela arco-íris.\n\nFase: Arquitetura e Design\nPara conexões front-end a back-end: Três soluções são possíveis, embora nenhuma esteja completa.\nA primeira sugestão envolve a utilização de senhas ou chaves geradas que são alteradas automaticamente e devem ser inseridas em determinados intervalos de tempo por um administrador do sistema. Essas senhas serão mantidas na memória e serão válidas apenas para os intervalos de tempo.\nEm seguida, as senhas ou chaves devem ser limitadas no back-end para executar apenas ações válidas para o front-end, em vez de ter acesso total.\nFinalmente, as mensagens enviadas devem ser marcadas e somadas com valores sensíveis ao tempo, de modo a evitar ataques do tipo repetição.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 920,
+              "y": 210
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Cognito"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1c97753e-d24b-44ae-8133-fa1751ac9fdf"
+                },
+                {
+                  "group": "right",
+                  "id": "fefc5757-3aff-446b-9b54-a67bacee372d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "94dee397-6ecd-404c-a6b3-55befcb9c7ae"
+                },
+                {
+                  "group": "left",
+                  "id": "3ed19bb6-8dcf-45d5-a04f-a4ef3cae47ac"
+                }
+              ]
+            },
+            "id": "a538fc1b-4f9e-4820-9e91-27af24ed6d43",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Store",
+              "name": "Cognito",
+              "description": " Gerenciamento de autenticação, incluindo suporte a MFA (autenticação multifator) e controle de acessos.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "b4b9d255-af59-47a9-a8f8-843f708dbe75",
+                  "title": "Insuficiência na Validação de JWTs",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "O produto não verifica suficientemente a origem ou autenticidade dos dados, de forma que aceite dados inválidos.\n\nCWE-345: Insufficient Verification of Data Authenticity\n\nCAPEC-111\tJSON Hijacking (aka JavaScript Hijacking)\nCAPEC-141\tCache Poisoning\nCAPEC-142\tDNS Cache Poisoning\nCAPEC-148\tContent Spoofing\nCAPEC-218\tSpoofing of UDDI/ebXML Messages\nCAPEC-384\tApplication API Message Manipulation via Man-in-the-Middle\nCAPEC-385\tTransaction or Event Tampering via Application API Manipulation\nCAPEC-386\tApplication API Navigation Remapping\nCAPEC-387\tNavigation Remapping To Propagate Malicious Content\nCAPEC-388\tApplication API Button Hijacking\nCAPEC-665\tExploitation of Thunderbolt Protection Flaws\nCAPEC-701\tBrowser in the Middle (BiTM)",
+                  "mitigation": "Fase: Implementação\nGarantir métodos de validação aplicados ao produto",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "9"
+                },
+                {
+                  "id": "f696eba4-5030-4911-96a9-1111229b5c50",
+                  "title": "Falta de Proteção Contra Ataques de Reutilização de Tokens",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Autenticar um usuário, ou estabelecer uma nova sessão de usuário, sem invalidar qualquer identificador de sessão existente, dá ao invasor a oportunidade de roubar sessões autenticadas.\n\nCWE-384: Session Fixation\n\nCAPEC-196\tSession Credential Falsification through Forging\nCAPEC-21\tExploitation of Trusted Identifiers\nCAPEC-31\tAccessing/Intercepting/Modifying HTTP Cookies\nCAPEC-39\tManipulating Opaque Client-based Data Tokens\nCAPEC-59\tSession Credential Falsification through Prediction\nCAPEC-60\tReusing Session IDs (aka Session Replay)\nCAPEC-61\tSession Fixation",
+                  "mitigation": "Fase: Implementação\nGarantir métodos de validação para o produto",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 820,
+              "y": 80
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "S3"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1c97753e-d24b-44ae-8133-fa1751ac9fdf"
+                },
+                {
+                  "group": "right",
+                  "id": "fefc5757-3aff-446b-9b54-a67bacee372d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "94dee397-6ecd-404c-a6b3-55befcb9c7ae"
+                },
+                {
+                  "group": "left",
+                  "id": "3ed19bb6-8dcf-45d5-a04f-a4ef3cae47ac"
+                }
+              ]
+            },
+            "id": "b67121fc-7c68-4c9c-9b10-2bf73c2c6f0d",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Store",
+              "name": "S3",
+              "description": "Armazenamento de logs de atividades, facilitando auditorias e análises.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "e0b010a0-f441-45ce-bbef-efc17edc1b0f",
+                  "title": "Falta de Criptografia de Dados Sensíveis",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "O produto não criptografa informações confidenciais ou críticas antes do armazenamento ou transmissão.\n\nCWE-311: Missing Encryption of Sensitive Data\n\nCAPEC-157\tSniffing Attacks\nCAPEC-158\tSniffing Network Traffic\nCAPEC-204\tLifting Sensitive Data Embedded in Cache\nCAPEC-31\tAccessing/Intercepting/Modifying HTTP Cookies\nCAPEC-37\tRetrieve Embedded Sensitive Data\nCAPEC-383\tHarvesting Information via API Event Monitoring\nCAPEC-384\tApplication API Message Manipulation via Man-in-the-Middle\nCAPEC-385\tTransaction or Event Tampering via Application API Manipulation\nCAPEC-386\tApplication API Navigation Remapping\nCAPEC-387\tNavigation Remapping To Propagate Malicious Content\nCAPEC-388\tApplication API Button Hijacking\nCAPEC-477\tSignature Spoofing by Mixing Signed and Unsigned Content\nCAPEC-609\tCellular Traffic Intercept\nCAPEC-65\tSniff Application Code",
+                  "mitigation": "Fase: Requisitos\nEspecifique claramente quais dados ou recursos são valiosos o suficiente para serem protegidos por criptografia. Exigir que qualquer transmissão ou armazenamento desses dados/recursos use algoritmos de criptografia bem verificados.\n\nFase: Arquitetura e Design\nCertifique-se de que a criptografia esteja devidamente integrada ao design do sistema, incluindo, mas não necessariamente limitado a:\nCriptografia necessária para armazenar ou transmitir dados privados dos usuários do sistema\nCriptografia necessária para proteger o próprio sistema contra divulgação ou adulteração não autorizada\nIdentifique as necessidades e contextos separados para criptografia:\nUnidirecional (ou seja, apenas o usuário ou destinatário precisa ter a chave). Isto pode ser conseguido usando criptografia de chave pública ou outras técnicas nas quais a parte criptografadora (ou seja, o produto) não precisa ter acesso a uma chave privada.\nBidirecional (ou seja, a criptografia pode ser executada automaticamente em nome de um usuário, mas a chave deve estar disponível para que o texto simples possa ser automaticamente recuperável por esse usuário). Isto requer o armazenamento da chave privada num formato que seja recuperável apenas pelo utilizador (ou talvez pelo sistema operativo) de uma forma que não possa ser recuperada por outros.\nUsando modelagem de ameaças ou outras técnicas, presuma que os dados podem ser comprometidos por meio de uma vulnerabilidade ou fraqueza separada e determine onde a criptografia será mais eficaz. Certifique-se de que os dados que deveriam ser privados não sejam expostos inadvertidamente usando pontos fracos, como permissões inseguras (CWE-732). [REF-7]\n\nFase: Arquitetura e Design\nEstratégia: Bibliotecas ou Frameworks\nQuando houver necessidade de armazenar ou transmitir dados confidenciais, use algoritmos criptográficos fortes e atualizados para criptografar esses dados. Selecione um algoritmo bem avaliado que seja atualmente considerado forte por especialistas na área e use implementações bem testadas. Tal como acontece com todos os mecanismos criptográficos, o código-fonte deve estar disponível para análise.\nPor exemplo, os sistemas governamentais dos EUA exigem certificação FIPS 140-2.\nNão desenvolva algoritmos criptográficos personalizados ou privados. Eles provavelmente estarão expostos a ataques que são bem compreendidos pelos criptógrafos. As técnicas de engenharia reversa estão maduras. Se o algoritmo puder ser comprometido se os invasores descobrirem como ele funciona, então ele é especialmente fraco.\nCertifique-se periodicamente de que a criptografia não se tornou obsoleta. Alguns algoritmos mais antigos, que antes exigiam um bilhão de anos de tempo de computação, agora podem ser quebrados em dias ou horas. Isso inclui MD4, MD5, SHA1, DES e outros algoritmos que já foram considerados fortes. [REF-267]\n\nFase: Arquitetura e Design\nEstratégia: Separação de Privilégios\nCompartimentalize o sistema para ter áreas “seguras” onde os limites de confiança possam ser traçados de forma inequívoca. Não permita que dados confidenciais ultrapassem os limites de confiança e sempre tenha cuidado ao interagir com um compartimento fora da área segura.\nCertifique-se de que a compartimentação apropriada esteja incorporada no design do sistema e que a compartimentação permita e reforce a funcionalidade de separação de privilégios. Arquitetos e designers devem confiar no princípio do menor privilégio para decidir o momento apropriado para usar privilégios e o momento para abandoná-los.\n\nFases: Implementação; Arquitetura e Design\nAo usar técnicas aprovadas pela indústria, use-as corretamente. Não economize pulando etapas que consomem muitos recursos (CWE-325). Muitas vezes, essas etapas são essenciais para prevenir ataques comuns.\n\nFase: Implementação\nEstratégia: Redução da Superfície de Ataque\nUse convenções de nomenclatura e tipos fortes para facilitar a identificação quando dados confidenciais estão sendo usados. Ao criar estruturas, objetos ou outras entidades complexas, separe os dados confidenciais e não confidenciais tanto quanto possível.\nEficácia: Defesa em Profundidade\nObservação: isso torna mais fácil identificar locais no código onde os dados não criptografados estão sendo usados.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "10"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 462,
+              "y": 400
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Logged"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "6ea3d6a3-81c0-422d-a9ec-9a2ba06907db"
+                },
+                {
+                  "group": "right",
+                  "id": "4a77068a-6f59-4d3c-aa17-28915007f78a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2c29ed33-6ee5-4d5d-aee9-cec385a3797e"
+                },
+                {
+                  "group": "left",
+                  "id": "ab649009-5163-4171-b162-61378a129751"
+                }
+              ]
+            },
+            "id": "0e847036-dc57-46a6-b94b-2c9a3d3140b6",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Process",
+              "name": "Logged",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          }
+        ],
         "description": "Diagrama de fluxo para o projeto de aplicação de login, de nome TDragon, que é uma tela de login, ligado ao cognito e ao s3, para configuração e armazenamento de logs, e usa o dockerfile para armazenamento de dados do usuário."
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 10
   }
 }
