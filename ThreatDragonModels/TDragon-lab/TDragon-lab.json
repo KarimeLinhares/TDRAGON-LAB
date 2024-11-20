@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "3b51c982-d9e4-46e8-88cf-aecf497a3756",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -154,6 +154,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +238,6 @@
               ]
             },
             "id": "0f5d85b8-7b92-4f03-8e65-ceb99786123b",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Login",
@@ -366,7 +366,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Dados Login",
-              "description": "",
+              "description": "Os dados colocados no input são direcionados para o backend",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -397,6 +397,93 @@
                   "name": "block"
                 },
                 "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dados do Usuário",
+              "description": "Os dados do usuário vão ser armazenados no banco de dados",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Dados do Usuário"
+            ],
+            "id": "baa0de33-520c-46cc-8b83-1303f68838b7",
+            "source": {
+              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af"
+            },
+            "target": {
+              "cell": "f5ec1e64-fd8c-4bde-9b95-580c4dd2c4be"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log",
+              "description": "Os logs vão ser ser armazenados no amazon s3",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Log"
+            ],
+            "id": "af86a422-d7dd-47ef-95ce-88dd2cd383fa",
+            "source": {
+              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af",
+              "port": "4a77068a-6f59-4d3c-aa17-28915007f78a"
+            },
+            "target": {
+              "cell": "b67121fc-7c68-4c9c-9b10-2bf73c2c6f0d",
+              "port": "3ed19bb6-8dcf-45d5-a04f-a4ef3cae47ac"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
                   "name": "block"
                 },
                 "strokeDasharray": null
@@ -409,7 +496,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Dados do usuário/JWT",
-              "description": "",
+              "description": "Os dados do usuário sã gravados e validados no amazon cognito, que retorna uma chave de validação jwt",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -451,50 +538,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Dados do Usuário",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Dados do Usuário"
-            ],
-            "id": "baa0de33-520c-46cc-8b83-1303f68838b7",
-            "source": {
-              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af"
-            },
-            "target": {
-              "cell": "f5ec1e64-fd8c-4bde-9b95-580c4dd2c4be"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Usuário verificado redirecionado",
-              "description": "",
+              "description": "Após o retorno da chave jwt para validação no backend, o usuário segue para a tela do produto logado",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -518,50 +563,6 @@
             }
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Log",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Log"
-            ],
-            "id": "af86a422-d7dd-47ef-95ce-88dd2cd383fa",
-            "source": {
-              "cell": "0647de6b-7059-4b24-ab33-0a8c6fe419af",
-              "port": "4a77068a-6f59-4d3c-aa17-28915007f78a"
-            },
-            "target": {
-              "cell": "b67121fc-7c68-4c9c-9b10-2bf73c2c6f0d",
-              "port": "3ed19bb6-8dcf-45d5-a04f-a4ef3cae47ac"
-            }
-          },
-          {
             "position": {
               "x": 576,
               "y": 210
@@ -582,6 +583,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -665,7 +667,6 @@
               ]
             },
             "id": "0647de6b-7059-4b24-ab33-0a8c6fe419af",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Backend",
@@ -754,6 +755,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -837,7 +839,6 @@
               ]
             },
             "id": "f5ec1e64-fd8c-4bde-9b95-580c4dd2c4be",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Docker",
@@ -899,6 +900,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -982,7 +984,6 @@
               ]
             },
             "id": "a538fc1b-4f9e-4820-9e91-27af24ed6d43",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Cognito",
@@ -1057,6 +1058,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1140,7 +1142,6 @@
               ]
             },
             "id": "b67121fc-7c68-4c9c-9b10-2bf73c2c6f0d",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "S3",
@@ -1197,6 +1198,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1280,7 +1282,6 @@
               ]
             },
             "id": "0e847036-dc57-46a6-b94b-2c9a3d3140b6",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Logged",
